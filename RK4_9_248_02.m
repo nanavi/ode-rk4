@@ -1,5 +1,5 @@
-g = @(t,x,y,z) z;
 f = @(t,x,y,z) y;
+g = @(t,x,y,z) z;
 z = @(t,x,y,z) 1 + exp(2*t)-x-3*y-3*z;
 t0 = 0;
 x0 = 0;

@@ -27,9 +27,9 @@ function [x y z] = RK4Sistemas3(f,g,q,t0,x0,y0,z0,tt)
     hold on
     plot(tt(i),x(i),'*r')
   endfor
-  t=tt(1):0.05:tt(n);
-  x1 = (1/27).*(-2.*(exp(-t)).*(9.*(t.^2)+15.*t+14)+exp(2.*t)+27);
-  hold on
-  plot(t,x1,'g')
-  grid on
+  %  t=tt(1):0.05:tt(n);
+  % x1 = (1/27).*(-2.*(exp(-t)).*(9.*(t.^2)+15.*t+14)+exp(2.*t)+27);
+  % hold on
+  % plot(t,x1,'g')
+  % grid on
 endfunction

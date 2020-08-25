@@ -89,12 +89,16 @@ if (option == "2")
     h = eval(h);
     To = input("Cuantos pasos?:\n> ","f");
     To= eval(To);
+    printf("Coeficiente 1:\n")
     disp(coef1)
+    printf("Coeficiente 2:\n")
     disp(coef2)
+    printf("Coeficiente 3:\n")
     disp(coef3)
+    printf("Coeficiente 4:\n")
     disp(coef4)
-    f = @(t,x,y,z) coef1*y
-    g = @(t,x,y,z) coef1*z
+    f = @(t,x,y,z) y
+    g = @(t,x,y,z) z
     z = @(t,x,y,z) (eval(igualdad)-coef1*x-coef2*y-coef3*z)/coef4
     t0 = 0;
     total = h*To;
